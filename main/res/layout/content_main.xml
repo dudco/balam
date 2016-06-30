@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dudco.appzam.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="2"
+        android:background="#419cff"
+        android:weightSum="2"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:gravity="center|bottom"
+            android:textSize="27dp"
+            android:text="나의 포인트"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:gravity="center|top"
+            android:textSize="27dp"
+            android:text="3,210 P"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="4"
+        android:background="@drawable/promo"
+        >
+
+        <Button
+            android:id="@+id/main_promo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ff0000"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/main_find"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:background="#FFF"
+            android:hint="이름으로 검색"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+
+        <ListView
+            android:id="@+id/main_list"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="8"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

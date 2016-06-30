@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dudco.appzam.SettingActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/settingbar"
+        android:layout_alignParentTop="true"
+        android:id="@+id/image"
+        android:onClick="onClick"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:text="발암 주기 설정"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:typeface="monospace"/>
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:text="발암 예외 시간"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time2"
+        android:text="발암 강도"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:typeface="monospace"
+        />
+
+</RelativeLayout>

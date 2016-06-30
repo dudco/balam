@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#b000"
+    >
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:src="@drawable/pro2"
+        android:id="@+id/image"/>
+    <RelativeLayout
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="20dp">
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:background="@drawable/text"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/edit"
+                android:hint="정답입력"
+                android:gravity="center"
+                android:textColor="#000"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="입력"
+                android:layout_toRightOf="@+id/btn_answer"
+                android:id="@+id/inputAnswer"/>
+        </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
